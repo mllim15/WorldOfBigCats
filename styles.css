@@ -1,12 +1,32 @@
-* {
-    box-sizing: border-box;
-}
-img {
-    max-width: 400px;
-    max-height: 400px;
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
-#lion {
+h1 {
+    letter-spacing: 5px;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding: 10px 25px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+img {
+    max-width: 540px;
+    max-height: 540px;
+}
+
+#lion, #tiger, #lynx {
     height: 100vh;
     width: 100vw;
     border: 1px solid red;
@@ -23,9 +43,9 @@ img {
 }
 
 .imgContainer, .puzzleContainer {
-    width: 402px;
-    height: 402px;
-    border: 1px solid blue;
+    width: 546px;
+    height: 546px;
+    border: 1px solid black;
     text-align: center;
     font-size: 30px;
     margin: 10px;
@@ -33,10 +53,35 @@ img {
     flex-wrap: wrap;
 }
 
+.puzzleContainer {
+    position: relative;
+}
+
 .piece {
-    width: calc(400px/3);
+    width: 180px;
+    height: 180px ;
     border: 1px solid black;
 }
+
+#lion .piece {
+    background-image: url(imgs/lion.jpeg);
+    background-repeat: no-repeat;
+}
+
+#tiger .piece {
+    background-image: url(imgs/tiger.jpeg);
+    background-repeat: no-repeat;
+}
+
+#lynx .piece {
+    background-image: url(imgs/lynx.jpeg);
+    background-repeat: no-repeat;
+}
+
+.draggable:active {
+    border: 3px solid red;
+}
+
 
 button {
     margin-top: 10px;
