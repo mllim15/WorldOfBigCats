@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+#lion {
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.puzzle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer, .puzzleContainer {
+    width: 402px;
+    height: 402px;
+    border: 1px solid blue;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.piece {
+    width: calc(400px/3);
+    border: 1px solid black;
+}
+
+button {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
