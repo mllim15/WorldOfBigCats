@@ -760,7 +760,7 @@ var simplemaps_worldmap_mapdata = {
       ],
       color: "#7400B8",
       zoomable: "no",
-      url: "#lynx",
+      url: "lynx.html#lynx",
       hover_color: "#7400B8",
       name: "Lynx"
     },
@@ -826,7 +826,7 @@ var simplemaps_worldmap_mapdata = {
       ],
       color: "#FAFC11",
       zoomable: "no",
-      url: "lion.html",
+      url: "lion.html#lion",
       hover_color: "#FAFC11",
       name: "Lion",
     },
