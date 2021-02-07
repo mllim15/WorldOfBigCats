@@ -1,6 +1,7 @@
 $(document).ready(function () {
     // 9 box puzzle
     let rows = 3, columns = 3;
+
     startingPuzzle();
 
     $("#solve").click(function () {
@@ -59,6 +60,9 @@ $(document).ready(function () {
         $("#reset").attr("hidden", false);
 
         draggableAndDroppableOn();
+
+        // if all droppable places are full, check to see if the pieces are in correct place
+        //isDroppableSpaceFull();
     }
 
     // when reset is clicked do this
@@ -68,13 +72,15 @@ $(document).ready(function () {
         // show the solve button
         $("#solve").attr("hidden", false);
 
-        // delete the divs of the puzzle pieces from both containers
+        // remove all divs of the puzzle pieces from both containers
         for (let i = 0; i < rows; i++) {
             for (let j = 0; j < columns; j++) {
                 $(".draggable").remove();
                 $(".droppable").remove();
             }
         }
+
+        // recreate start of puzzle
         startingPuzzle();
     }
 
@@ -94,5 +100,14 @@ $(document).ready(function () {
             }
         });
     }
+
+    /* check if puzzle is finished
+    function isDroppableSpaceFull() {
+        // if all droppable places are full, check to see if the pieces are in correct place
+        if ($(".imgContainer div.full").length == $(".imgContainer div").length) {
+            console.log("true");
+        }
+    }
+    */
 })
 

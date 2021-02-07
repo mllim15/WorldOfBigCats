@@ -10,18 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
+    <!-- Map -->
+    <script type="text/javascript" src="mapdata.js"></script>		
+    <script  type="text/javascript" src="worldmap.js"></script>
+
     <!-- jQuery UI -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>World of Big Cats</h1>
-    <p>Click a region to find out which big cat is native to that country.</p>
+    <div class="mapContainer">
+        <h1 id="heading">World of Big Cats</h1>
+        <p id="description">Click a region to find out which big cat is native to that country.</p>
 
-    <div class="map">
-
-    </div>
+        <!-- interactive map -->
+        <div id="map"></div>
+     </div>
 
     <div id="lion">
         <div class="puzzle">
@@ -68,9 +74,10 @@
     </div>
 
     <div id="cheetah">
+    </div>
 -->
 
-    </div>
+    
 
     <!-- jQuery and jQuery UI CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
