@@ -1,6 +1,6 @@
-var simplemaps_worldmap_mapdata={
+var simplemaps_worldmap_mapdata = {
   main_settings: {
-   //General settings
+    //General settings
     width: "responsive", //'700' or 'responsive'
     background_color: "#284472",
     background_transparent: "no",
@@ -13,7 +13,7 @@ var simplemaps_worldmap_mapdata={
     border_size: "1",
     all_states_inactive: "yes",
     all_states_zoomable: "no",
-    
+
     //Location defaults
     location_description: "Location description",
     location_color: "#FF0067",
@@ -28,14 +28,14 @@ var simplemaps_worldmap_mapdata={
     location_hover_border: 2.5,
     all_locations_inactive: "no",
     all_locations_hidden: "no",
-    
+
     //Label defaults
     label_color: "#d5ddec",
     label_hover_color: "#d5ddec",
     label_size: 22,
     label_font: "Arial",
     hide_labels: "no",
-   
+
     //Zoom settings
     zoom: "yes",
     back_image: "no",
@@ -47,7 +47,7 @@ var simplemaps_worldmap_mapdata={
     zoom_out_incrementally: "yes",
     zoom_percentage: 0.99,
     zoom_time: 0.5,
-    
+
     //Popup settings
     popup_color: "white",
     popup_opacity: 0.9,
@@ -55,7 +55,7 @@ var simplemaps_worldmap_mapdata={
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
-    
+
     //Advanced settings
     div: "map",
     auto_load: "yes",
@@ -826,9 +826,9 @@ var simplemaps_worldmap_mapdata={
       ],
       color: "#FAFC11",
       zoomable: "no",
-      url: "#lion",
+      url: "lion.html",
       hover_color: "#FAFC11",
-      name: "Lion"
+      name: "Lion",
     },
     "4": {
       states: [
